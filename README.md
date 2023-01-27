@@ -37,4 +37,7 @@ npm run deploy
 ```
 
 
+* [Демо проекта на Github Pages](https://ushakovdmitry.github.io/mesto-react/)
+
+
 
