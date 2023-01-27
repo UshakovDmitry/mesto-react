@@ -1,16 +1,11 @@
 import React from "react";
+import useCloseModal from './hooks/useCloseModal'
+
+
 function ImagePopup(props) {
-  React.useEffect(() => {
-    const handleEscClose = (event) => {
-      if (event.key === "Escape") {
-        props.onClose();
-      }
-    };
-    document.addEventListener("keydown", handleEscClose);
-    return function removeListener() {
-      document.removeEventListener("keydown", handleEscClose);
-    };
-  }, [props.card]);
+
+
+  useCloseModal(props.card.link , props.onClose)
 
   return (
     <div
