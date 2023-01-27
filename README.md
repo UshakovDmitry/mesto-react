@@ -36,3 +36,6 @@ npm start
 npm run deploy
 ```
 
+НОРМ?
+
+
