@@ -1,5 +1,7 @@
 {
   "name": "mesto-react",
+  "author": "Dmitry Ushakov",
+  "homepage": "https://ushakovdmitry.github.io/mesto-react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

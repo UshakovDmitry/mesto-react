@@ -34,7 +34,7 @@ const Main = (props) => {
           {props.cards.map((card) => {
             return (
               <Card
-                key={card.id}
+                key={card._id}
                 card={card}
                 onCardDelete={props.onCardDelete}
                 onCardClick={props.onCardClick}

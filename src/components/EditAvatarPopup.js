@@ -1,7 +1,9 @@
 import { useRef } from "react";
 import PopupWithForm from "./PopupWithForm";
+import useCloseModal from './hooks/useCloseModal'
 
 const EditAvatarPopup = (props) => {
+  useCloseModal(props.isOpen , props.onClose)
   const avatarRef = useRef();
 
   function handleSubmit(e) {

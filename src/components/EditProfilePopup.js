@@ -1,9 +1,14 @@
 import React, { useEffect } from "react";
 import { CurrentUserContext } from "../Contexts/CurrentUserContext";
 import PopupWithForm from "./PopupWithForm";
+import useCloseModal from './hooks/useCloseModal'
 
 const EditProfilePopup = (props) => {
   
+  useCloseModal(props.isOpen, props.onClose)
+
+
+
   const currentUser = React.useContext(CurrentUserContext);
 
   const [name, setName] = React.useState("");
