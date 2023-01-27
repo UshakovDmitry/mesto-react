@@ -1,9 +1,10 @@
 import React from "react";
 import PopupWithForm from "./PopupWithForm";
-import useCloseModal from './hooks/useCloseModal'
+import useCloseModal from "./hooks/useCloseModal";
 
 const AddPlacePopup = (props) => {
-  useCloseModal(props.isOpen, props.onClose)
+  
+  useCloseModal(props.isOpen, props.onClose);
 
   const [image, setImage] = React.useState("");
   const [description, setDescription] = React.useState("");
