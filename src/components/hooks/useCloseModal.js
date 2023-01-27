@@ -1,5 +1,7 @@
+import React from "react";
+
 const useCloseModal = (isOpen, handleClose) => {
-    useEffect(() => {
+    React.useEffect(() => {
       if (!isOpen) return;
   
       const handleClickESC = (e) => {
