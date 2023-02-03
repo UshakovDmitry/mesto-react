@@ -35,7 +35,7 @@ export default function App() {
       });
   }, []);
 
-  // Получаем карточки с сервера и обновляем при изменении
+  
 
   React.useEffect(() => {
     api
@@ -180,3 +180,9 @@ export default function App() {
     </CurrentUserContext.Provider>
   );
 }
+
+
+
+
+
+
